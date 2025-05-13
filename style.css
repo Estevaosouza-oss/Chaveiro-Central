@@ -1,0 +1,147 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-bottom: 0;
+  padding: 0px 0; /* Pequeno espaçamento acima e abaixo */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 50px auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#logo {
+  width: 500px;
+  height: auto; /* Reduzi de 20px para 10px */
+  margin-top: 30pt;
+  margin-bottom: 30pt;
+}
+.whatsapp-box {
+    width: 100%; /* Caixa do WhatsApp ocupa 100% */
+    max-width: 300px; /* Limita a largura da caixa */
+  }
+
+.whatsapp-box {
+  background-color: yellow;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.whatsapp-box p {
+  font-family: sans-serif;
+  color: black; /* Agora o texto é preto */
+  font-weight: bold;
+  margin: 0 0 0 0;
+}
+
+.btn-whatsapp {
+    width: 85%;  /* Faz o botão ocupar toda a largura disponível */
+    max-width: 300px;  /* Limita a largura do botão */
+    background-color: black;
+    color: yellow;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+  }
+/* Ajustes para dispositivos móveis */
+/*@media (max-width: 768px) {
+  .container {
+    width: 40%; Reduz a largura para 40% em telas menores 
+    margin: 0 auto;  Centraliza a container 
+  }
+*/
+@media (max-width: 740px) {
+  .container {
+    margin: 0 auto 10px auto;
+    width: 90%;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+
+#logo {
+    width: 100%;
+    max-width: 300px;  /* Aumentei a largura máxima */
+    margin-top: 50px;  /* Ajuste no espaço acima do logo */
+    margin-bottom: 40px;  /* Ajuste no espaço abaixo do logo */
+  }
+
+
+
+  .whatsapp-box {
+    margin-bottom: 50px; /* espaço reservado para o rodapé */
+    width: 85%; /* Caixa do WhatsApp também ocupa 100% */
+    max-width: 300px; /* Limita a largura da caixa */
+    margin-bottom: 0px;
+  }
+}
+.faixa-inferior {
+position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: yellow;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.texto-rolando {
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 100%;
+  animation: rolar 10s linear infinite;
+  font-weight: bold;
+  color: black;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+@keyframes rolar {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.lista-amarela {
+  background-color: yellow;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: fit-content;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.lista-amarela ul {
+  color: black;
+  font-weight: bold;
+  list-style-type: disc;
+  margin-top: 0; /* Corrigido */
+  padding-left: 20px;
+}
+
+.lista-amarela li {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
